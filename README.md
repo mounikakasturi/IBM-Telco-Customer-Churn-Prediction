@@ -1,184 +1,224 @@
-# IBM Telco Customer Churn Prediction
+# 📊 IBM Telco Customer Churn Analysis & Prediction
 
-## 📌 Project Overview
+An end-to-end Data Analytics and Machine Learning project that analyzes customer churn patterns and predicts customers who are likely to leave a telecom service.
 
-This is an end-to-end Customer Churn Analytics and Prediction project based on the IBM Telco Customer Churn dataset.
+## 🚀 Live Demo
 
-The project analyzes customer behavior and predicts whether a customer is likely to churn or stay using Machine Learning.
+👉 **[Launch the Live Streamlit App](https://ibm-telco-customer-churn-prediction.streamlit.app/)**
 
-The project includes data analysis, SQL analysis, Power BI dashboarding, Machine Learning, and Streamlit deployment.
+## 💻 GitHub Repository
+
+👉 **[View the Source Code on GitHub](https://github.com/mounikakasturi/IBM-Telco-Customer-Churn-Prediction)**
 
 ---
 
-## 🎯 Business Objective
+## 📌 Project Overview
 
-The main objective of this project is to identify customers who are at risk of leaving the telecom company.
+This project uses the IBM Telco Customer Churn dataset to analyze customer behavior, identify key churn drivers, and build a Machine Learning model to predict customer churn.
 
-By predicting customer churn, businesses can:
+The project follows an end-to-end workflow covering:
 
-- Identify high-risk customers
-- Understand factors affecting customer churn
-- Take proactive customer retention actions
-- Improve customer satisfaction
-- Reduce customer loss
+**Excel → SQL → Power BI → Python → Machine Learning → Streamlit → GitHub → Cloud Deployment**
+
+---
+
+## 🎯 Business Problem
+
+Customer churn is a major challenge for telecom companies. The objective of this project is to identify customers who are at higher risk of leaving and provide actionable insights that can help businesses improve customer retention.
+
+The solution helps businesses:
+
+* Identify high-risk customers
+* Understand factors associated with churn
+* Analyze customer segments
+* Support proactive retention strategies
+* Improve customer engagement
+* Reduce potential customer loss
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- SQL
-- Excel
-- Power BI
-- Streamlit
-- Joblib
+* **Python**
+* **Pandas**
+* **NumPy**
+* **Matplotlib**
+* **Seaborn**
+* **Scikit-learn**
+* **SQL**
+* **Excel**
+* **Power BI**
+* **Streamlit**
+* **Joblib**
 
 ---
 
-## 📊 Data Analysis
+## 🔄 Project Workflow
 
-The dataset was analyzed using Python, Excel, SQL, and Power BI.
+### 1️⃣ Excel Analysis
 
-The analysis focused on:
+* Data cleaning
+* Missing value analysis
+* Pivot tables
+* Pivot charts
+* Churn analysis
 
-- Customer demographics
-- Tenure
-- Contract type
-- Internet service
-- Payment method
-- Monthly charges
-- Total charges
-- Customer churn
+### 2️⃣ SQL Analysis
+
+* Data exploration
+* KPI calculations
+* GROUP BY analysis
+* Customer segmentation
+* Churn rate analysis
+* Business-focused SQL queries
+
+### 3️⃣ Power BI Dashboard
+
+Created an interactive dashboard to analyze:
+
+* Overall churn rate
+* Customer churn by contract
+* Churn by payment method
+* Churn by internet service
+* Churn by senior citizen status
+* Customer and churn KPIs
+
+### 4️⃣ Python EDA
+
+Performed:
+
+* Data cleaning
+* Data type conversion
+* Exploratory Data Analysis
+* Categorical analysis
+* Numerical analysis
+* Correlation analysis
+* Data visualization
+
+### 5️⃣ Machine Learning
+
+Built a classification model to predict customer churn.
+
+The workflow included:
+
+* Train-test split
+* Feature preprocessing
+* Categorical encoding
+* Feature scaling
+* Logistic Regression
+* Model evaluation
+* Cross-validation
+* Hyperparameter tuning
+
+### 6️⃣ Model Evaluation
+
+The model was evaluated using:
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* Confusion Matrix
+* ROC-AUC
+
+### 7️⃣ Streamlit Application
+
+Developed an interactive web application where users can enter customer information and receive:
+
+* Churn prediction
+* Churn probability
+* Risk level
+* Business recommendation
+
+### 8️⃣ Deployment
+
+The Streamlit application was deployed to the cloud and made available through a public live URL.
 
 ---
 
-## 🤖 Machine Learning
+## 📊 Key Business Insights
 
-A Machine Learning classification model was trained to predict customer churn.
+The analysis identified several important churn patterns:
 
-The trained Machine Learning pipeline is saved using Joblib.
-
-Model file:
-
-`customer_churn_pipeline.pkl`
-
-The model predicts:
-
-- `0` → Customer is likely to Stay
-- `1` → Customer is likely to Churn
-
-The Streamlit application also displays the estimated churn probability.
+* Customers on **month-to-month contracts** show higher churn risk.
+* Customers with **long-term contracts** generally demonstrate better retention.
+* Customers with **higher monthly charges** may have increased churn risk.
+* Customers with **shorter tenure** may be more likely to leave.
+* Payment methods and service-related factors can influence churn behavior.
 
 ---
 
-## 🚀 Streamlit Application
+## 💡 Business Impact
 
-A Streamlit web application was developed to make the Machine Learning model interactive.
+The churn prediction solution can help telecom companies identify customers who may be at risk of leaving.
 
-Users can enter customer information such as:
+Businesses can use these insights to:
 
-- Gender
-- Senior Citizen
-- Partner
-- Dependents
-- Tenure
-- Phone Service
-- Multiple Lines
-- Internet Service
-- Online Security
-- Online Backup
-- Device Protection
-- Tech Support
-- Streaming TV
-- Streaming Movies
-- Contract
-- Paperless Billing
-- Payment Method
-- Monthly Charges
-- Total Charges
-
-The application provides:
-
-- Churn Prediction
-- Churn Probability
-- Risk Level
-
-Risk levels are categorized as:
-
-- Low Risk 🟢
-- Medium Risk 🟡
-- High Risk 🔴
+* Offer personalized retention plans
+* Provide targeted discounts and offers
+* Improve customer support
+* Encourage long-term contracts
+* Create targeted customer engagement strategies
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
-IBM_TELCO_CHURN/
+IBM-Telco-Customer-Churn-Prediction/
 │
 ├── app.py
 ├── customer_churn_pipeline.pkl
 ├── requirements.txt
-└── README.md
+├── runtime.txt
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## ▶️ How to Run the Application
+## ▶️ How to Run Locally
 
-### Step 1: Install Required Libraries
+### Step 1: Clone the Repository
 
-Open the terminal in the project folder and run:
+```bash
+git clone https://github.com/mounikakasturi/IBM-Telco-Customer-Churn-Prediction.git
+```
+
+### Step 2: Open the Project Folder
+
+```bash
+cd IBM-Telco-Customer-Churn-Prediction
+```
+
+### Step 3: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 2: Run the Streamlit Application
-
-Run the following command:
+### Step 4: Run the Streamlit Application
 
 ```bash
 streamlit run app.py
 ```
 
-### Step 3: Open the Application
-
-After running the command, open the Streamlit application in your web browser.
-
 ---
 
-## 💡 Business Insights
+## 🌐 Project Links
 
-The analysis provided the following key insights:
+**Live Application:**
+https://ibm-telco-customer-churn-prediction.streamlit.app/
 
-- Customers with month-to-month contracts have a higher risk of churn.
-- Customers with long-term contracts generally show better customer retention.
-- Customers with higher monthly charges may have a higher risk of churn.
-- Customers with shorter tenure may have a higher likelihood of leaving.
-- Payment method and service-related factors can also influence customer churn.
-
----
-
-## 📈 Business Impact
-
-The churn prediction model can help telecom companies identify customers who may be at risk of leaving.
-
-The company can use these predictions to:
-
-- Offer personalized retention plans
-- Provide discounts or special offers
-- Improve customer support
-- Encourage long-term contracts
-- Develop targeted customer engagement strategies
+**GitHub Repository:**
+https://github.com/mounikakasturi/IBM-Telco-Customer-Churn-Prediction
 
 ---
 
 ## 👩‍💻 Author
 
-Mounika Kasturi
+### Mounika Kasturi
+
+Data Analytics & Machine Learning Enthusiast
+
+Skills: Python | SQL | Excel | Power BI | Machine Learning | Streamlit
